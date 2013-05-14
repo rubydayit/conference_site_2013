@@ -1,0 +1,9 @@
+---
+:orm: datamapper
+:test: none
+:mock: none
+:script: jquery
+:renderer: haml
+:stylesheet: none
+:namespace: ConferenceSite2013
+:admin_renderer: haml
