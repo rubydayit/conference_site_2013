@@ -31,7 +31,7 @@ header {
 
 .main {
   @include clearfix;
-  margin-bottom: 135px;
+  /*margin-bottom: 135px;*/
 }
 
 .bottombar {
@@ -53,10 +53,10 @@ a, a:hover, a:active, a:visited {
 .cfp {
   width: 400px;
   float: right;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.4em;
   @include text-shadow(1px 1px $dark_red);
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/
 
   .twitter-share-button {
     margin-left: 20px;
@@ -139,7 +139,7 @@ input[type=email].email {
 }
 
 .modal {
-
+  display: none;
   .modal-body {
     max-height: 500px;
   }
@@ -169,3 +169,10 @@ input[type=email].email {
   @include background(linear-gradient(top, $dark_red, $light_red));  
 }
 
+.clear{
+  clear: both;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
