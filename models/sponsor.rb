@@ -3,7 +3,7 @@ require 'data_mapper'
 class Sponsor
   include DataMapper::Resource
 
-  PLANS = %w(platinum gold silver bronze)
+  PLANS = %w(platinum gold silver bronze perks location)
 
   property :id, Serial
   property :name, String

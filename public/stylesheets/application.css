@@ -8,7 +8,7 @@ body {
 .main {
   min-height: 100%;
   height: auto !important;
-  margin: 0 auto -70px; /* margin-bottom: minus footer's height */
+  margin: 0 auto -40px; /* margin-bottom: minus footer's height */
   padding: 0 10px;
 }
 .main-wrapper {
@@ -18,8 +18,8 @@ body {
   height: 70px; /* same as the footer */
 }
 footer {
-  margin-top: -70px;
-  height: 70px;
+  margin-top: -40px;
+  height: 40px;
   border-top: 1px solid #eee;
   padding: 10px 10px 0;
   -webkit-box-shadow: 0px 1px 22px #e5e5e5;
