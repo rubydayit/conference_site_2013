@@ -30,6 +30,8 @@
             %li{:class => "navbar-module"}
               =link_to 'Contact', 'mailto:info@rubyday.it?subject=Information%20about%20the%20RubyDay%202013'
 
+          %p.navbar-text.pull-right 14 June 2013 &ndash; Milan
+
     .container.main
       .main-wrapper
         =[:error, :warning, :success, :notice].map { |type| flash_tag(type, :class => "alert alert-#{type} fade in", :bootstrap => true) }.join.html_safe
@@ -41,7 +43,8 @@
         %p.pull-left
           Copyright &copy;
           =Time.now.year
-          rubyday.it 
+          rubyday.it -
+          =link_to 'Privacy Policy', 'https://www.iubenda.com/privacy-policy/891527'
         %ul.pull-right.footer-links
           %li= link_to tag_icon(:home, 'web'), '/', :target => :_blank, :class => 'footer-links-link'
           %li= link_to tag_icon(:github, 'code'), 'https://github.com/rubydayit', :target => :_blank, :class => 'footer-links-link'

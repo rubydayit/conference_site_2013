@@ -1,4 +1,36 @@
-%div.span8
-  %h2 Venue info
+=javascript_include_tag 'google_map'
+
+%div.span8#venue
+  %h2 The venue: University of Milan-Bicocca
+
+  %h3 Address
+  %p
+    Building U6
+    %br Piazza dell'Ateneo Nuovo, 1
+    20126, Milan
+  %hr
+
+  %div#gmap_canvas{ style: 'width:100%; height:400px'}
+  %hr
+
+  %h3 How to reach the conference
+
+  %h5 By public transport:
+  %p Lilac underground to "Ponale"
+  %p Red underground to "Precotto" and then Tram #7 to "Arcimboldi Ateneo Nuovo" (2 stops)
+
+  %h5 By train:
+  %p Stazione Centrale: take the Bus #87 to "Arcimboldi Ateneo Nuovo" (12 stops)
+  %p Stazione Garibaldi: take the suburban train to "Milano Greco Pirelli" (1 stop)
+
+  %h5 By airplane:
+  %p Linate: take the Bus #73 to "San Babila" (16 stops), then the red underground to "Precotto" (9 stops) and finally the Tram #7 to "Arcimboldi Ateneo Nuovo" (2 stops)"
+  %p Malpensa: take the Malpensa Express train to Milan Centrale, then the Bus #87 to "Arcimboldi Ateneo Nuovo" (12 stops)
+  %p Orio al Serio: take the bus to Milan Centrale, then the Bus #87 to "Arcimboldi Ateneo Nuovo" (12 stops)
+
+  %h5 By car:
+  %p
+    Around the university there are usually some free parking spots, but if you want to be sure to find it, we suggest you to park at the Bicocca Village. The university is at 5 minutes walk distance.
+    =link_to 'Get directions', 'https://maps.google.com/maps?q=Club+Virgin+Active+Milano+Bicocca,+Viale+Sarca,+232,+20126+Milan,+Province+of+Milan,+Italy&daddr=Club+Virgin+Active+Milano+Bicocca,+Viale+Sarca,+232,+20126+Milan,+Province+of+Milan,+Italy&hl=en&ll=45.521714,9.21592&spn=0.010464,0.022724&sll=45.521067,9.212937&sspn=0.010464,0.022724&doflg=ptk&hq=Club+Virgin+Active+Milano+Bicocca,+Viale+Sarca,+232,&hnear=20126,+Italy&t=m&z=16'
 %div.span4
   =partial 'sponsors/sidebar'

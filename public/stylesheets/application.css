@@ -396,11 +396,7 @@ body {
 .sponsor-logo {
     padding: 10px;
     background: white;
-    border: #DCA1A1 solid 1px;
-}
-
-.sponsor-logo:hover, .sponsor-logo:focus {
-    border-color: #DC4A43;
+    border: #ddd solid 1px;
 }
 
 .sponsor-sidebar .block {
@@ -408,7 +404,7 @@ body {
 }
 
 .sponsor-sidebar .well {
-    background: rgba(255,255,255,0.3);
+    background: white;
 }
 
 .sponsor-sidebar .well a:hover {
@@ -429,6 +425,26 @@ body {
 
 .sponsor-sidebar .sponsor-logo {
     margin: 0 10px 10px 0;
+    border: none;
 }
 
+.navbar-text {
+    line-height: 50px;
+    margin: 10px 10px 0 0;
+    color: #ddd;
+    font-size: 1.3em;
+}
+
+.red-color {
+    color: #DC4A43 !important;
+}
+
+#gmap_canvas img {
+    max-width: none;
+    height: auto;
+}
+
+#venue h5 {
+    margin-top: 25px;
+}
 /* -- End Application -- */
