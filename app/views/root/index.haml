@@ -1,4 +1,21 @@
-%div.span8
-  %h2 Hello world :)
+%div.span8#home
+  %h2 It's that time of the year again!
+  =image_tag 'people.jpg'
+
+  %h3 We're all thrilled to announce the third edition of the RubyDay!
+
+  %p The big news about this year's edition is that we've finally created the no-profit Italian Ruby Association and entrance is free for all its members.
+  %p The membership fee for year 2013 costs &euro;30.00.
+  %p.lead
+    =link_to 'Register now at the Italian Ruby Association & RubyDay [Italian form]', 'http://www.teamartist.org/non_logged/accounts?society_id=2500'
+  %p.lead
+    =link_to 'Register now at the Italian Ruby Association & RubyDay [English form]', 'https://docs.google.com/forms/d/1yZupzod3NfR6Kc0vnQU9A40-AL2avpcPuMCPOhWjCk0/viewform?pli=1'
+
+  %hr
+
+  %p If you only want to attend the event and are not interested in becoming a member, the price will be &euro;36.30 (&euro;30.00 + 21% VAT) and you will receive an email with payment details.
+  %p.lead
+    =link_to 'Register at the RubyDay only', 'https://docs.google.com/forms/d/1Hka7RQkcdaEt7YKRUpLLDCO4MEMunPWkKyCzRkEUVCc/viewform?pli=1'
+
 %div.span4
   =partial 'sponsors/sidebar'

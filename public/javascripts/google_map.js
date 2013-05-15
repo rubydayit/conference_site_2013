@@ -9,7 +9,7 @@ function initialize() {
             style: google.maps.NavigationControlStyle.SMALL
         },
         mapTypeControl: false,
-        scrollwheel: true,
+        scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
 
@@ -33,7 +33,7 @@ function initialize() {
         '<h4 class="red-color">RubyDay 2013</h4>' +
         '<strong>Building U6</strong><br />' +
         "Piazza dell'Ateneo Nuovo, 1<br />" +
-        '20126, Milano<br />' +
+        '20126, Milan<br />' +
         '<a href="https://maps.google.com/maps?q=Piazza+dell%27Ateneo+Nuovo,+Milan,+Province+of+Milan,+Italy&hl=en&ll=45.518963,9.214311&spn=0.010464,0.022724&sll=45.518015,9.216027&sspn=0.010464,0.022724&oq=piaz&hnear=Piazza+dell%27Ateneo+Nuovo,+Milano,+Lombardia,+Italy&t=m&z=16" target="_blank">Google Maps &#x2192;</a>' +
         '</div>';
     var infoWindow = new google.maps.InfoWindow({
