@@ -4,7 +4,7 @@ migration 4, :create_sponsors do
       column :id, Integer, :serial => true
       column :name, String, :length => 255
       column :url, String, :length => 255
-      column :type, Integer
+      column :type, String
       column :created_at, DateTime
       column :updated_at, DateTime
     end

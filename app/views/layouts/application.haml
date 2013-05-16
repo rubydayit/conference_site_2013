@@ -11,6 +11,18 @@
     =favicon_tag 'favicon.ico'
     %link{:href => 'http://fonts.googleapis.com/css?family=Varela', :rel => :stylesheet}
     =stylesheet_link_tag 'bootstrap', 'application'# , 'style'
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38071341-1']);
+      _gaq.push(['_setDomainName', 'rubyday.it']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
 
   %body
     .navbar.navbar-fixed-top
@@ -30,6 +42,8 @@
             %li{:class => "navbar-module"}
               =link_to 'Contact', 'mailto:info@rubyday.it?subject=Information%20about%20the%20RubyDay%202013'
 
+          %p.navbar-text.pull-right 14 June 2013 &ndash; Milan
+
     .container.main
       .main-wrapper
         =[:error, :warning, :success, :notice].map { |type| flash_tag(type, :class => "alert alert-#{type} fade in", :bootstrap => true) }.join.html_safe
@@ -41,7 +55,8 @@
         %p.pull-left
           Copyright &copy;
           =Time.now.year
-          rubyday.it 
+          rubyday.it -
+          =link_to 'Privacy Policy', 'https://www.iubenda.com/privacy-policy/891527'
         %ul.pull-right.footer-links
           %li= link_to tag_icon(:home, 'web'), '/', :target => :_blank, :class => 'footer-links-link'
           %li= link_to tag_icon(:github, 'code'), 'https://github.com/rubydayit', :target => :_blank, :class => 'footer-links-link'

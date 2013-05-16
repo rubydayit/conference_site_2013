@@ -13,9 +13,9 @@
       -sponsors.each do |sponsor|
         %div.media
           %div.pull-left
-            %a{ href: sponsor.url, target: '_blank' }
-              %img.sponsor-logo{ src: "/images/sponsors/#{sponsor.image_name}" }
+            %img.sponsor-logo{ src: "/images/sponsors/#{sponsor.image_name}" }
           %div.media-body
             %h4.media-heading
               =sponsor.name
             =simple_format(sponsor.description).html_safe
+            =link_to "Visit #{sponsor.name}", sponsor.url, target: '_blank'

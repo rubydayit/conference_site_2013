@@ -4,7 +4,6 @@ ruby '2.0.0'
 gem 'padrino', '0.11.1'
 
 # Project requirements
-gem 'compass', '~> 0.12.2'
 gem 'rake', '~> 10.0.4'
 
 # Component requirements

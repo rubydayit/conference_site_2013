@@ -1,5 +1,3 @@
-require 'compass'
-
 module ConferenceSite2013
   class App < Padrino::Application
     register Padrino::Rendering
@@ -38,15 +36,6 @@ module ConferenceSite2013
     # disable :flash                # Disables sinatra-flash (enabled by default if Sinatra::Flash is defined)
     # layout  :my_layout            # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
     #
-
-    configure do
-      Compass.configuration do |config|
-        config.project_path = File.dirname(__FILE__)
-        config.sass_dir = 'views/stylesheets'
-        config.images_dir = 'images'
-      end
-      set :scss, Compass.sass_engine_options
-    end
 
     ##
     # You can configure for a specified environment like:
