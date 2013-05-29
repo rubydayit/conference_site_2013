@@ -103,13 +103,17 @@
 
   %hr
 
-  %h3 Abstracts
   %h4#talk1 A Rails Criticism
   A deep insight on why Ruby on Rails has revolutionized web development.
   %br
   This talk will focus its attention on the Rails "Golden Path", the reasons to its success, the most common problems, and how its API can be improved.
   %br
   We will learn to benefit from a tool as powerful as it is dangerous, how to mitigate  architectural, design and testability implications for your applications and how to improve the quality of your code.
+
+  %h5 Luca Guidi
+  Passionate web developer, he spent most of his career working with Rails, since its early days. In his free time, he loves to travel, spend time with his family, contribute to open source, blog about technology, and mix beats. He is an avid photographer and tea lover.
+
+  %hr
 
   %h4#talk2 Opal, Ruby is back! …on your browser!
   Opal is a production ready Ruby-to-Javascript compiler. In this presentation I will talk on how Ruby can be used to build awesome code for the browser. Keep applying all of your OO design skills having less context switch and increasing happiness!
@@ -124,23 +128,57 @@
   %br
   \- fun! :-D
 
+  %h5 Elia Schito
+  A Ruby/Rails developer @mikamai, catholic, who loves his beautiful wife and his wonderful children. Opal core team member.
+
+  %hr
+
   %h4#talk3 Redis &amp; Ruby like a pro
   Redis is an open source advanced key-value store. It can contain strings, hashes, lists, sets and sorted sets. Its greatest feature is that you can run atomic operations on these types, like appending to a string; incrementing the value in a hash; pushing to a list; computing set intersection, union and difference.
   %br
   This talk shows how use Redis and Ruby to build an high scalable, reliable and concurrent infrastructure of services using the Publish/Subscribe messaging paradigm and distributed locks among services. All the examples coming from a large scale application that handles hundred millions of messages every day.
+
+  %h5 Stefano Fontanelli
+  I am a software engineer from Florence (Italy) with 8+ years of experience in software development. I studied at Scuola Superiore Sant'Anna (Pisa) as PhD student and I founded a startup called Asidev. Currently I'm backend developer at Gild, a Californian startup that brings Science into hiring. I love writing large scale applications that must be highly scalable, reliable and efficient.
+
+  %hr
 
   %h4#talk4 Securing your API via OAuth (2.0) and Ruby on Rails
   Need a uniform and standard mechanism for authorizing clients to access remote services and resources securely? OAuth is what you’ve been searching for! OAuth is an open standard widely adopted over the Internet and many big companies started supporting it, e.g., Facebook, Google, etc.
   %br
   In this talk we explain OAuth protocol basics and theory, pointing out strengths and weaknesses. Eventually, we show how to implement a typical OAuth authorization scenario where an iOS client is authorized to consume services via OAuth, exploiting Ruby on Rails and Doorkeeper on the server side of the force.
 
+  %h5 Alessio Della Motta
+  Alessio Della Motta is a software architect and engineer interested in almost every field of computing. His technical background covers a wide range of technologies and languages and his focus is on enterprise and distributed systems.
+  %br
+  Alessio completed his master’s degree at the University of California, Irvine in 2010. Then he started working as an IT consultant specializing in EAI and SOA. Now he manages and designs software solutions at Mavigex, a small company in Bologna.
+  %br
+  In his spare time, Alessio likes to play guitar, football and to read big divulgative tomes on math and physics.
+
+  %hr
+
   %h4#talk5 Fat models must die
   Il concetto “Fat Models, Skinny controller” è da sempre uno dei cavalli di battaglia di Rails ed è uno dei principi fondamentali intorno a cui ruota il suo stack. Purtroppo, seguire ciecamente questo pattern spesso porta ad una crescita smisurata delle responsabilità dei modelli, che col passare del tempo e dei commit si trasformano in matasse di codice ingarbugliato e ingestibile.
   %br
   In questo talk verranno esplorate differenti metodologie che si possono seguire nella pratica per mantenere il controllo del proprio progetto. Si descriveranno i pattern più diffusi proposti dalla community Rails per risolvere il problema della crescita del codice nel medio-lungo periodo: incominciando con concerns e presenters per passare a service objects e DCI, verranno spiegati i pregi dell’utilizzare pratiche più OOP per gestire con soddisfazione la complessità delle nostre applicazioni.
 
+  %h5 Ju Liu
+  Ingegnere informatico, appassionato di tecnologia e conoscenza. Si è dedicato allo sviluppo di applicazioni web, con un focus particolare a metodologie di lavoro agili e al Test Driven Development. Innamorato di Ruby on Rails, del codice elegante e di Vim.
+
+  %h5 Stefano Verna
+  Entusiasta di nuove tecnologie, TDD e metodi agili di sviluppo. Attivo contributore open-source, appassionato sviluppatore Ruby. Conosciuto dai più per l'estensione per Fire­fox Do­wn­The­mAll!
+  %br
+  Nel 2010 sono tra i fon­da­to­ri di we­Lai­ka, so­cie­tà di consulenza torinese spe­cia­liz­za­ta in sviluppo di ap­pli­ca­zio­ni/ge­stio­na­li in Ru­by on Rails e sviluppo mo­bi­le iOS ed An­droid.
+
+  %hr
+
   %h4#talk6 Eseguire e monitorare applicazioni Rack con uWSGI
   Nato nel 2009 come semplice server per applicazioni WSGI, il progetto uWSGI in 4 anni e' cresciuto a dismisura diventando oramai un framework per costruire applicazioni di rete ad ogni livello. A meta' 2012 (dopo piu' di un anno di lavoro) e' stato finalmente completato il supporto per lo standard Rack (l'equivalente ruby di WSGI).Ora uWSGI puo' eseguire framework come RubyOnRails e Sinatra aggiungendo "for free" tutte le features che gli hanno permesso di diventare l'application server di riferimento in realta' come Reddit, DotCloud, Activestate Stackato, Washington post e molti altri. Il talk introdurra' brevemente il progetto per poi presentare un caso di uso reale, ovvero come e' stata costruita l'infrastruttura di mytable.it, uno dei piu' grandi (forse il piu' grande) portale in italia scritto in Ruby On Rails.
+
+  %h5 Roberto De Ioris
+  Co-fondatore di Unbit e 20Tab, amministratore di sistemi UNIX da 11 anni (di fila..), lead-developer dei progetti uWSGI, BlastBeat, Koi-ha e altri di cui non ricordo neanche il nome. Prediligo la programmazione low-level ma non disdegno linguaggi come perl, python e ovviamente ruby
+
+  %hr
 
   %h4#talk7 Roll your own web crawler
   It is all about data.
@@ -149,10 +187,27 @@
   %br
   Taking the advantage of the latest cool technologies I will show you how to build your distributed web crawler based on Redis and Mongo
 
+  %h5 Francesco Laurita
+  Francesco joined Gild in 2012 as a Lead Software Engineer, having fun writing complex algorithms on Gild’s data analysis backend. Prior to Gild, Francesco worked for more than ten years at FASTWEB, one of the biggest ISP companies in Italy, where he led business critical software. Francesco was also one of the top users on Coderloop, leading him to become one of the authors of challenges on Gild’s code evaluation system.
+
+  %hr
+
   %h4#talk8 Ruby e la Scienza
   Ruby anche scienza: la sua versatilità, insieme alle diverse implementazioni, offre nuove opportunità di utilizzo creando un ecosistema di strumenti e librerie applicabili a diverse discipline scientifice. Dalla biologia e bioinformatica, con il progetto BioRuby, alla matematica e statistica, con il progetto SciRuby, il numero di gemme e' in costante crescita (http://biogems.info).
   %br
   Nuove tematiche, come il web semantico e la gestione della conoscenza, insieme a tecniche di data mining, machine learning e visualizzazione, vengono studiate,  sviluppate e sperimentate in occasione di eventi internazionali quali CodeFest e BioHakathon. Lo stimolo a migliorarci, avere nuove idee, diffondere le librerie e gli strumenti prodotti ci ha condotti, ormai dal 2009, a partecipare al programma Google Summer of Code raggiungendo, anno dopo anno, progetti di successo, coinvolgendo nuovi sviluppatori e una massa critica di mentori in grado di stimolare sempre più la comunità.
+
+  %h5 Raoul JP Bonnal
+  Laureato nel 2003 in Informatica all'Università di Milano Bicocca, ha intrapreso la carriera di bioinformatico presso il CNR-ITB e un'esperienza in America e' ora responsabile della bioinformatica, sviluppo e analisi dati, presso l'Istituto Nazionale di Genetica Molecolare di Milano.
+  %br
+  Insieme a Francesco Strozzi contribuisce al progetto BioRuby, parte della Open BioInformatics Foundation -OBF-, e sono mentori Google Summer of Code per le organizzazione OBF e SciRuby.
+
+  %h5 Francesco Strozzi
+  Laureato nel 2005 in Bioinformatica all'Università di Milano Bicocca, è responsabile dal 2011 della Core Facility di Bioinformatica del Parco Tecnologico di Lodi, per lo sviluppo software e l'analisi di dati genomici.
+  %br
+  Insieme a Raoul JP Bonnal contribuisce al progetto BioRuby, parte della Open BioInformatics Foundation -OBF-, e sono mentori Google Summer of Code per le organizzazione OBF e SciRuby.
+
+  %hr
 
   %h4#talk9 Concurrency vs Parallelism
   What does it mean to structure a program in a concurrent manner?
@@ -163,13 +218,34 @@
   %br
   I'll also take a brief view on different patterns to achieve concurrency and which gems to use that implement one.
 
+  %h5 Federico Ravasio
+  That programming geek you'll find arguing about syntax on a late friday night, probably in front of quality Belgian beer.
+  %br
+  When university was no longer fun, he started freelancing at Webrain and has been doing so ever since.
+  %br
+  Longer version: http://www.linkedin.com/in/federicoravasio
+
+  %hr
+
   %h4#talk10 The Client-Side on Ruby
   In this talk, I would like to look at the options that Ruby offers to serve client-side web applications. With the example of Backbone.JS I would like to  discuss first the elements of a client-side web application (events, rendering, data transport), and how this influences a web application stack (= separation of concerns)
   %br
   Second, I would like to show how Rack and Sinatra can be used to serve directories of JavaScript files. Last, I want to show the relationship between Rack, Sprockets and the Asset Pipeline. Last, and I want to do a preview on loading multiple JavaScript files asynchronously through RequireJS-Rails.
 
+  %h5 Patrick Mulder
+  I started to get paid for developing user interfaces for Matlab end of the 90ies, progressed towards scripting Unix with Perl, Python and Java (Swing), and finally got infected by the Ruby-on-Rails around 2008. I have been developing web applications with Ruby since then, and rarely looked back.
+  %br
+  I like blogging at http://thinkingonthinking.com and was recently invited to a panel discussion at Wroclove.rb 2013 on single page applications with different representatives of frontend frameworks (AngularJS, EmberJS and Backbone.js).
+
+  %hr
+
   %h4#talk11 DDD in Ruby
   When developers talk about Domain Driven Design they usually talk about Java or C# implementation and it seems that languages like Ruby or Python are not suited for these kind of architectures. During the talk I would like to show that every patterns described in the blue book can be written even in Ruby and sometimes the Ruby implementation is better than the Java one. Ruby is not a second a class language and its dynamic power could help a lot in writing complex business logic.
+
+  %h5 Emanuele DelBono
+  I'm a software engineer that is trying to become a polyglot programmer learning new languages and tools to develop better applications. I work as a lead developer and architect in CodicePlastico a small software house based in Italy, I'm responsible for the development of web applications primarily with ASP.NET MVC and Ruby on Rails and Javascript.
+
+  %hr
 
   %h4#talk12 Rubymotion for fun and profits
   Two years ago, at rubyday '11, I did a talk about Macruby and predicted the advent of something similar for the iOS platform.
@@ -184,8 +260,20 @@
   %br
   Finally I will show come concrete code examples from my apps.
 
+  %h5 Simone D'Amico
+  I'm COO of Metwit, a platform that collects and analyse crowdsourced environmental data (especially weather).
+  %br
+  I'm passionate about a lot stuff: XP and Agile (I'm coaching SCRUM), Devops (chef worshipper), Apple frameworks (Cocoa lover) and obviously Ruby (I used it before it was cool ;))
+
+  %hr
+
   %h4#talk13 Code it from scratch
   An overview about starting your app small and growing it bigger as you need, beginning with domain model classes "sketched" in ruby (yea, DDD) and then considering integrating various libs or implementing your own to reduce complexity and save time in the end.
+
+  %h5 Francesco Canessa
+  The average developer, ruby and javascript are my day-to-day languages, developeing multiple small open source projects and libraries based on tools I need.
+
+  %hr
 
   %h4#talk14 Cooking lessons with Vim and Tmux
   The purpose of the talk is to show how to tackle different tasks with a shell based environment composed of Vim, Tmux and other tools. The core idea is that we can use Rails conventions to make our workflow better. And being all of this modular, you can mix and match different solutions to fit your needs.
@@ -206,74 +294,7 @@
   %br
   The main theme of the talk will be cooking: for example, having knife skills is important for any dish you want to prepare. In a similar fashion, being able to easily jump around files is also key in not breaking your flow.
 
-  %hr
-
-  %h3 Speakers
-
-  %h4 Luca Guidi
-  Passionate web developer, he spent most of his career working with Rails, since its early days. In his free time, he loves to travel, spend time with his family, contribute to open source, blog about technology, and mix beats. He is an avid photographer and tea lover.
-
-  %h4 Elia Schito
-  A Ruby/Rails developer @mikamai, catholic, who loves his beautiful wife and his wonderful children. Opal core team member.
-
-  %h4 Stefano Fontanelli
-  I am a software engineer from Florence (Italy) with 8+ years of experience in software development. I studied at Scuola Superiore Sant'Anna (Pisa) as PhD student and I founded a startup called Asidev. Currently I'm backend developer at Gild, a Californian startup that brings Science into hiring. I love writing large scale applications that must be highly scalable, reliable and efficient.
-
-  %h4 Alessio Della Motta
-  Alessio Della Motta is a software architect and engineer interested in almost every field of computing. His technical background covers a wide range of technologies and languages and his focus is on enterprise and distributed systems.
-  %br
-  Alessio completed his master’s degree at the University of California, Irvine in 2010. Then he started working as an IT consultant specializing in EAI and SOA. Now he manages and designs software solutions at Mavigex, a small company in Bologna.
-  %br
-  In his spare time, Alessio likes to play guitar, football and to read big divulgative tomes on math and physics.
-
-  %h4 Ju Liu
-  Ingegnere informatico, appassionato di tecnologia e conoscenza. Si è dedicato allo sviluppo di applicazioni web, con un focus particolare a metodologie di lavoro agili e al Test Driven Development. Innamorato di Ruby on Rails, del codice elegante e di Vim.
-
-  %h4 Stefano Verna
-  Entusiasta di nuove tecnologie, TDD e metodi agili di sviluppo. Attivo contributore open-source, appassionato sviluppatore Ruby. Conosciuto dai più per l'estensione per Fire­fox Do­wn­The­mAll!
-  %br
-  Nel 2010 sono tra i fon­da­to­ri di we­Lai­ka, so­cie­tà di consulenza torinese spe­cia­liz­za­ta in sviluppo di ap­pli­ca­zio­ni/ge­stio­na­li in Ru­by on Rails e sviluppo mo­bi­le iOS ed An­droid.
-
-  %h4 Roberto De Ioris
-  Co-fondatore di Unbit e 20Tab, amministratore di sistemi UNIX da 11 anni (di fila..), lead-developer dei progetti uWSGI, BlastBeat, Koi-ha e altri di cui non ricordo neanche il nome. Prediligo la programmazione low-level ma non disdegno linguaggi come perl, python e ovviamente ruby
-
-  %h4 Francesco Laurita
-  Francesco joined Gild in 2012 as a Lead Software Engineer, having fun writing complex algorithms on Gild’s data analysis backend. Prior to Gild, Francesco worked for more than ten years at FASTWEB, one of the biggest ISP companies in Italy, where he led business critical software. Francesco was also one of the top users on Coderloop, leading him to become one of the authors of challenges on Gild’s code evaluation system.
-
-  %h4 Raoul JP Bonnal
-  Laureato nel 2003 in Informatica all'Università di Milano Bicocca, ha intrapreso la carriera di bioinformatico presso il CNR-ITB e un'esperienza in America e' ora responsabile della bioinformatica, sviluppo e analisi dati, presso l'Istituto Nazionale di Genetica Molecolare di Milano.
-  %br
-  Insieme a Francesco Strozzi contribuisce al progetto BioRuby, parte della Open BioInformatics Foundation -OBF-, e sono mentori Google Summer of Code per le organizzazione OBF e SciRuby.
-
-  %h4 Francesco Strozzi
-  Laureato nel 2005 in Bioinformatica all'Università di Milano Bicocca, è responsabile dal 2011 della Core Facility di Bioinformatica del Parco Tecnologico di Lodi, per lo sviluppo software e l'analisi di dati genomici.
-  %br
-  Insieme a Raoul JP Bonnal contribuisce al progetto BioRuby, parte della Open BioInformatics Foundation -OBF-, e sono mentori Google Summer of Code per le organizzazione OBF e SciRuby.
-
-  %h4 Federico Ravasio
-  That programming geek you'll find arguing about syntax on a late friday night, probably in front of quality Belgian beer.
-  %br
-  When university was no longer fun, he started freelancing at Webrain and has been doing so ever since.
-  %br
-  Longer version: http://www.linkedin.com/in/federicoravasio
-
-  %h4 Patrick Mulder
-  I started to get paid for developing user interfaces for Matlab end of the 90ies, progressed towards scripting Unix with Perl, Python and Java (Swing), and finally got infected by the Ruby-on-Rails around 2008. I have been developing web applications with Ruby since then, and rarely looked back.
-  %br
-  I like blogging at http://thinkingonthinking.com and was recently invited to a panel discussion at Wroclove.rb 2013 on single page applications with different representatives of frontend frameworks (AngularJS, EmberJS and Backbone.js).
-
-  %h4 Emanuele DelBono
-  I'm a software engineer that is trying to become a polyglot programmer learning new languages and tools to develop better applications. I work as a lead developer and architect in CodicePlastico a small software house based in Italy, I'm responsible for the development of web applications primarily with ASP.NET MVC and Ruby on Rails and Javascript.
-
-  %h4 Simone D'Amico
-  I'm COO of Metwit, a platform that collects and analyse crowdsourced environmental data (especially weather).
-  %br
-  I'm passionate about a lot stuff: XP and Agile (I'm coaching SCRUM), Devops (chef worshipper), Apple frameworks (Cocoa lover) and obviously Ruby (I used it before it was cool ;))
-
-  %h4 Francesco Canessa
-  The average developer, ruby and javascript are my day-to-day languages, developeing multiple small open source projects and libraries based on tools I need.
-
-  %h4 Claudio Ortolina
+  %h5 Claudio Ortolina
   Hello!
   %br
   My name is Claudio, I'm an italian developer currently living in London and I work for New Bamboo (http://new-bamboo.co.uk).
